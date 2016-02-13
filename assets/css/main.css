@@ -142,7 +142,6 @@ a:after {
   display: inline-block;
 }
 
-
 /* +++++ WRAP SECTIONS +++++ */
 
 #ww {
@@ -243,4 +242,10 @@ bt {
 .glyphicon {
 	font-size: 40px;
 	color: #1abc9c;
+}
+
+/* fizzy icon configuration */
+.fizz-icon {
+  font-size: 50px;
+  color: #1abc9c;
 }

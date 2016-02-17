@@ -145,7 +145,9 @@ a:after {
 /* +++++ WRAP SECTIONS +++++ */
 
 #ww {
-	padding-top: 70px;
+	/*padding-top: 70px;*/
+  /*Adjust for sticky header*/
+  padding-top: 210px;
 	padding-bottom: 70px;
 	background-color: #f2f2f2;
 }
@@ -253,4 +255,13 @@ bt {
 .dev-icon {
   font-size: 50px;
   color: #1abc9c;
+}
+
+/* sticky header */
+.navbar {
+  transition: all 0.4s ease;
+}
+
+.sticky {
+  padding: 0;
 }

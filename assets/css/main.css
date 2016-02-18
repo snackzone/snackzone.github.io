@@ -265,3 +265,7 @@ bt {
 .sticky {
   padding: 0;
 }
+
+.img-responsive {
+  margin: auto;
+}

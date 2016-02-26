@@ -145,9 +145,7 @@ a:after {
 /* +++++ WRAP SECTIONS +++++ */
 
 #ww {
-	/*padding-top: 70px;*/
-  /*Adjust for sticky header*/
-  padding-top: 210px;
+	padding-top: 70px;
 	padding-bottom: 70px;
 	background-color: #f2f2f2;
 }
@@ -257,7 +255,7 @@ bt {
   color: #1abc9c;
 }
 
-/* sticky header */
+/* sticky navbar */
 .navbar {
   transition: all 0.4s ease;
 }
@@ -268,4 +266,10 @@ bt {
 
 .img-responsive {
   margin: auto;
+}
+
+.nav-buffer {
+  display: block;
+  background: #f2f2f2;
+  padding-top: 210px;
 }

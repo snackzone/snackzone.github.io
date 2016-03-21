@@ -13,6 +13,12 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Fizzy Icons -->
+    <link rel="stylesheet" href="assets/css/font-mfizz.css">
+
+    <!-- Dev-Icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -55,9 +61,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="work.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="mailto:zachary.moroni@gmail.com">Contact</a></li>
+            <li><a href="#projects" id="workLink">Work</a></li>
+            <li><a href="#about" id="aboutLink">About</a></li>
+            <li><a href="#contact" id="contactLink">Contact</a></li>
             <li><a target="_blank" href="ZacharyMoroniResume.pdf">Resume</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -70,12 +76,20 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
-					<img class="img-responsive" src="assets/img/zachary-moroni-circle.png" alt="It's me!">
+					<img name="about" id="about" class="img-responsive" src="assets/img/zachary-moroni-circle.png" alt="It's me!">
 					<h1>Hi, I am Zach.</h1>
 					<p>I'm a web developer based in Greenpoint, Brooklyn.</p>
-					<p>I have experience in Ruby, JavaScript, HTML/CSS, and the React.js and Rails frameworks. I love solving complex challenges with modular, readable code.</p>
+					<p>
+            I have experience in Ruby, JavaScript, HTML/CSS, and the React.js<br />
+            and Rails frameworks. I've been programming since I bought my<br />
+            TI-83+ calculator in middle school.
+          </p>
           <p>
-            <a href="mailto:zachary.moroni@gmail.com">Drop me a line.</a>
+            I love solving complex challenges with modular, readable code,<br />
+            and I play a mean game of Dominion.
+          </p>
+          <p>
+            Drop me a line at <strong>zachary.moroni@gmail.com</strong>
           </p>
 
 				</div><!-- /col-lg-8 -->
@@ -87,20 +101,120 @@
 	<!-- +++++ Projects Section +++++ -->
 
 	<div class="container pt">
-    <h1 class="mt centered">Projects</h1>
+    <h1 class="mt centered" name="projects" id="projects">Projects</h1>
 		<div class="row mt centered">
 			<div class="col-md-4 col-sm-6">
-				<a class="zoom green" href="pizzatime.html"><img class="img-responsive" src="assets/img/portfolio/pizzatime-small.png" alt="" /></a>
-				<p><a href="pizzatime.html">PIZZATIME NYC</a></p>
+				<a class="zoom green" href="http://pizzatime.nyc"><img class="img-responsive" src="assets/img/portfolio/pizzatime-small.png" alt="" /></a>
+				<p>PIZZATIME NYC</p>
+        <p>
+          <a href="http://pizzatime.nyc">live</a> |
+          <a href="http://github.com/snackzone/pizzatime">github</a>
+        </p>
+        <hr>
+        <p>A social restaurant review platform inspired by Yelp.</p>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Enables dynamic, location-based searching through Google Maps API
+          </li>
+          <li class="list-group-item">
+            Employs React for a seamless user experience in a single-page app
+          </li>
+          <li class="list-group-item">
+            Minimizes server requests with precise API views and nested data
+          </li>
+        </ul>
 			</div>
+
       <div class="col-md-4 col-sm-6">
-				<a class="zoom green" href="breakout.html"><img class="img-responsive" src="assets/img/portfolio/breakout-small.png" alt="" /></a>
-				<p><a href="breakout.html">BREAKOUT</a></p>
+				<a class="zoom green" href="http://www.zacharymoroni.com/Breakout/"><img class="img-responsive" src="assets/img/portfolio/breakout-small.png" alt="" /></a>
+				<p>BREAKOUT</p>
+        <p>
+          <a href="http://www.zacharymoroni.com/Breakout/">live</a> |
+          <a href="http://github.com/snackzone/breakout">github</a>
+        </p>
+        <hr>
+        <p>The Atari classic rebuilt for the browser with vanilla JS.</p>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Animates explosions using trigonometric functions
+          </li>
+          <li class="list-group-item">
+            Renders gameplay on native HTML5 Canvas element
+          </li>
+        </ul>
 			</div>
+
       <div class="col-md-4 col-sm-6">
-				<a class="zoom green" href="puffs.html"><img class="img-responsive" src="assets/img/portfolio/activerecordlite.png" alt="" /></a>
-				<p><a href="puffs.html">PUFFS</a></p>
+				<a class="zoom green" href="http://github.com/snackzone/puffs"><img class="img-responsive" src="assets/img/portfolio/activerecordlite.png" alt="" /></a>
+				<p>PUFFS</p>
+        <p>
+          <a href="http://rubygems.org/gems/puffs">Rubygems</a> |
+          <a href="http://github.com/snackzone/puffs">github</a>
+        </p>
+        <hr>
+        <p>A Ruby gem providing a light-weight MVC and ORM</p>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Creates new features or whole new projects through the command line
+          </li>
+          <li class="list-group-item">
+            Generates SQL queries with simple Ruby methods
+          </li>
+          <li class="list-group-item">
+            Routes requests to controller actions using regular expressions
+          </li>
+        </ul>
 			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+  <div class="container pt">
+    <h1 class="mt centered">My Favorite Tools</h1>
+		<div class="row mt centered">
+			<div class="col-xs-6 col-md-3">
+				<i class="icon-ruby fizz-icon"></i>
+				<p>Ruby</p>
+			</div>
+
+      <div class="col-xs-6 col-md-3">
+        <i class="icon-ruby-on-rails fizz-icon"></i>
+        <p>Rails</p>
+      </div>
+
+			<div class="col-xs-6 col-md-3">
+        <i class="icon-html fizz-icon"></i>
+        <p>HTML</p>
+			</div>
+
+			<div class="col-xs-6 col-md-3">
+        <i class="icon-css fizz-icon"></i>
+        <p>CSS</p>
+			</div>
+
+      <div class="col-xs-6 col-md-3">
+        <i class="icon-javascript fizz-icon"></i>
+        <p>JavaScript</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <i class="icon-nodejs fizz-icon"></i>
+        <p>Node.js</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <i class="icon-postgres fizz-icon"></i>
+        <p>PostgreSQL</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+
+        <p>
+          <i
+            style="height: 50px; width: auto; margin: 11px 0; display: block;"
+            class="devicon-react-original dev-icon"></i>
+          React
+        </p>
+      </div>
 		</div><!-- /row -->
 	</div><!-- /container -->
 
@@ -111,17 +225,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <h4>My Links</h4>
+          <h4 id="contact" name="contact">My Links</h4>
           <p>
             <a target="_blank" href="https://github.com/snackzone">Github</a><br/>
             <a target="_blank" href="https://www.linkedin.com/in/zacharymoroni">LinkedIn</a><br/>
             <a target="_blank" href="https://www.facebook.com/zachary.moroni">Facebook</a><br/>
-            <a href="mailto:zachary.moroni@gmail.com">Email me</a>
+            Email me at zachary.moroni@gmail.com
           </p>
         </div><!-- /col-lg-4 -->
-
       </div>
-
     </div>
   </div>
 
@@ -132,4 +244,18 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/sticky-header.js"></script>
   </body>
+
+  <!-- Scroll Links -->
+  <script>
+    function scrollToLink () {
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 50
+      }, 500);
+      return false;
+    }
+
+    $('#workLink').click(scrollToLink);
+    $('#aboutLink').click(scrollToLink);
+    $('#contactLink').click(scrollToLink);
+  </script>
 </html>
